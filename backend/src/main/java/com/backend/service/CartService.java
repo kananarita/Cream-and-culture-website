@@ -1,7 +1,7 @@
-package com.yoghurtshop.backend.service;
+package com.backend.service;
 
-import com.yoghurtshop.backend.dto.request.CartItemRequest;
-import com.yoghurtshop.backend.dto.response.CartResponse;
+import com.backend.dto.request.CartItemRequest;
+import com.backend.dto.response.CartResponse;
 
 public interface CartService {
     CartResponse getCart(String userEmail);

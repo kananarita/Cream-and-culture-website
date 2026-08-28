@@ -1,9 +1,9 @@
-package com.yoghurtshop.backend.controller;
+package com.backend.controller;
 
-import com.yoghurtshop.backend.dto.request.UpdateOrderStatusRequest;
-import com.yoghurtshop.backend.dto.response.OrderResponse;
-import com.yoghurtshop.backend.enums.OrderStatus;
-import com.yoghurtshop.backend.service.OrderService;
+import com.backend.dto.request.UpdateOrderStatusRequest;
+import com.backend.dto.response.OrderResponse;
+import com.backend.enums.OrderStatus;
+import com.backend.service.OrderService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;

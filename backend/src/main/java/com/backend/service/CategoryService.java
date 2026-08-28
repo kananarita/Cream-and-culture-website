@@ -1,7 +1,7 @@
-package com.yoghurtshop.backend.service;
+package com.backend.service;
 
-import com.yoghurtshop.backend.dto.request.CategoryRequest;
-import com.yoghurtshop.backend.dto.response.CategoryResponse;
+import com.backend.dto.request.CategoryRequest;
+import com.backend.dto.response.CategoryResponse;
 
 import java.util.List;
 

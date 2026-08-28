@@ -1,6 +1,6 @@
-package com.yoghurtshop.backend.entity;
+package com.backend.entity;
 
-import com.yoghurtshop.backend.enums.OrderStatus;
+import com.backend.enums.OrderStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

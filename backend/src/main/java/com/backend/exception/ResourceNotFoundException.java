@@ -1,4 +1,4 @@
-package com.yoghurtshop.backend.exception;
+package com.backend.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
     public ResourceNotFoundException(String message) {

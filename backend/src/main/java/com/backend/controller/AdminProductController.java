@@ -1,8 +1,8 @@
-package com.yoghurtshop.backend.controller;
+package com.backend.controller;
 
-import com.yoghurtshop.backend.dto.request.ProductRequest;
-import com.yoghurtshop.backend.dto.response.ProductResponse;
-import com.yoghurtshop.backend.service.ProductService;
+import com.backend.dto.request.ProductRequest;
+import com.backend.dto.response.ProductResponse;
+import com.backend.service.ProductService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

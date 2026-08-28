@@ -1,7 +1,7 @@
-package com.yoghurtshop.backend.config;
+package com.backend.config;
 
-import com.yoghurtshop.backend.security.CustomUserDetailsService;
-import com.yoghurtshop.backend.security.JwtAuthenticationFilter;
+import com.backend.security.CustomUserDetailsService;
+import com.backend.security.JwtAuthenticationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

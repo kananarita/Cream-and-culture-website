@@ -1,6 +1,6 @@
-package com.yoghurtshop.backend.security;
+package com.backend.security;
 
-import com.yoghurtshop.backend.entity.User;
+import com.backend.entity.User;
 import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

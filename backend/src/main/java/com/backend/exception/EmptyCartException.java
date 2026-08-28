@@ -1,4 +1,4 @@
-package com.yoghurtshop.backend.exception;
+package com.backend.exception;
 
 public class EmptyCartException extends RuntimeException {
     public EmptyCartException(String message) {

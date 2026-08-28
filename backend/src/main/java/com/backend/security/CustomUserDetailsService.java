@@ -1,7 +1,7 @@
-package com.yoghurtshop.backend.security;
+package com.backend.security;
 
-import com.yoghurtshop.backend.entity.User;
-import com.yoghurtshop.backend.repository.UserRepository;
+import com.backend.entity.User;
+import com.backend.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

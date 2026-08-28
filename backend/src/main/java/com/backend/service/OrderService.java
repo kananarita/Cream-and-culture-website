@@ -1,8 +1,8 @@
-package com.yoghurtshop.backend.service;
+package com.backend.service;
 
-import com.yoghurtshop.backend.dto.request.CheckoutRequest;
-import com.yoghurtshop.backend.dto.response.OrderResponse;
-import com.yoghurtshop.backend.enums.OrderStatus;
+import com.backend.dto.request.CheckoutRequest;
+import com.backend.dto.response.OrderResponse;
+import com.backend.enums.OrderStatus;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

@@ -1,6 +1,6 @@
-package com.yoghurtshop.backend.dto.request;
+package com.backend.dto.request;
 
-import com.yoghurtshop.backend.enums.OrderStatus;
+import com.backend.enums.OrderStatus;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 

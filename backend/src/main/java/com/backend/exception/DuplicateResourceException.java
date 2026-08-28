@@ -1,4 +1,4 @@
-package com.yoghurtshop.backend.exception;
+package com.backend.exception;
 
 public class DuplicateResourceException extends RuntimeException {
     public DuplicateResourceException(String message) {

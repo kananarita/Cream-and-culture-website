@@ -1,6 +1,6 @@
-package com.yoghurtshop.backend.repository;
+package com.backend.repository;
 
-import com.yoghurtshop.backend.entity.Product;
+import com.backend.entity.Product;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,4 +1,4 @@
-package com.yoghurtshop.backend.enums;
+package com.backend.enums;
 
 public enum Role {
     CUSTOMER,

@@ -1,6 +1,6 @@
-package com.yoghurtshop.backend.dto.response;
+package com.backend.dto.response;
 
-import com.yoghurtshop.backend.enums.Role;
+import com.backend.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

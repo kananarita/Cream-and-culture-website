@@ -1,7 +1,7 @@
-package com.yoghurtshop.backend.controller;
+package com.backend.controller;
 
-import com.yoghurtshop.backend.dto.response.ProductResponse;
-import com.yoghurtshop.backend.service.ProductService;
+import com.backend.dto.response.ProductResponse;
+import com.backend.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

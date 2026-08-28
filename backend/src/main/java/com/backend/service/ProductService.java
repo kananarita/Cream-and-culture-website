@@ -1,7 +1,7 @@
-package com.yoghurtshop.backend.service;
+package com.backend.service;
 
-import com.yoghurtshop.backend.dto.request.ProductRequest;
-import com.yoghurtshop.backend.dto.response.ProductResponse;
+import com.backend.dto.request.ProductRequest;
+import com.backend.dto.response.ProductResponse;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

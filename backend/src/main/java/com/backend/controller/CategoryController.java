@@ -1,7 +1,7 @@
-package com.yoghurtshop.backend.controller;
+package com.backend.controller;
 
-import com.yoghurtshop.backend.dto.response.CategoryResponse;
-import com.yoghurtshop.backend.service.CategoryService;
+import com.backend.dto.response.CategoryResponse;
+import com.backend.service.CategoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

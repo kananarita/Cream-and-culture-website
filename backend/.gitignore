@@ -1,7 +1,7 @@
 target/
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**
-!**/src/test/**
+!**/src/main/**/target/
+!**/src/test/**/target/
 
 ### IDE ###
 .idea/
@@ -9,15 +9,12 @@ target/
 *.iml
 *.ipr
 .vscode/
-.settings/
 .classpath
 .project
+.settings/
 
-### OS ###
+### Mac/OS ###
 .DS_Store
-
-### Logs ###
-*.log
 
 ### Env ###
 .env

@@ -1,13 +1,13 @@
-package com.yoghurtshop.backend.service.impl;
+package com.backend.service.impl;
 
-import com.yoghurtshop.backend.dto.request.ProductRequest;
-import com.yoghurtshop.backend.dto.response.ProductResponse;
-import com.yoghurtshop.backend.entity.Category;
-import com.yoghurtshop.backend.entity.Product;
-import com.yoghurtshop.backend.exception.ResourceNotFoundException;
-import com.yoghurtshop.backend.repository.CategoryRepository;
-import com.yoghurtshop.backend.repository.ProductRepository;
-import com.yoghurtshop.backend.service.ProductService;
+import com.backend.dto.request.ProductRequest;
+import com.backend.dto.response.ProductResponse;
+import com.backend.entity.Category;
+import com.backend.entity.Product;
+import com.backend.exception.ResourceNotFoundException;
+import com.backend.repository.CategoryRepository;
+import com.backend.repository.ProductRepository;
+import com.backend.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

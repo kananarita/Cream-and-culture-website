@@ -1,9 +1,9 @@
-package com.yoghurtshop.backend.controller;
+package com.backend.controller;
 
-import com.yoghurtshop.backend.dto.request.LoginRequest;
-import com.yoghurtshop.backend.dto.request.RegisterRequest;
-import com.yoghurtshop.backend.dto.response.AuthResponse;
-import com.yoghurtshop.backend.service.AuthService;
+import com.backend.dto.request.LoginRequest;
+import com.backend.dto.request.RegisterRequest;
+import com.backend.dto.response.AuthResponse;
+import com.backend.service.AuthService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

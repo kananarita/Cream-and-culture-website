@@ -1,7 +1,7 @@
-package com.yoghurtshop.backend.repository;
+package com.backend.repository;
 
-import com.yoghurtshop.backend.entity.Order;
-import com.yoghurtshop.backend.enums.OrderStatus;
+import com.backend.entity.Order;
+import com.backend.enums.OrderStatus;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

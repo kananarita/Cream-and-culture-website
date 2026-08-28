@@ -1,6 +1,6 @@
-package com.yoghurtshop.backend.exception;
+package com.backend.exception;
 
-import com.yoghurtshop.backend.dto.response.ApiErrorResponse;
+import com.backend.dto.response.ApiErrorResponse;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

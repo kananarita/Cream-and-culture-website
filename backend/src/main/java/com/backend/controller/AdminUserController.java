@@ -1,8 +1,8 @@
-package com.yoghurtshop.backend.controller;
+package com.backend.controller;
 
-import com.yoghurtshop.backend.dto.request.InviteAdminRequest;
-import com.yoghurtshop.backend.dto.response.UserResponse;
-import com.yoghurtshop.backend.service.AuthService;
+import com.backend.dto.request.InviteAdminRequest;
+import com.backend.dto.response.UserResponse;
+import com.backend.service.AuthService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

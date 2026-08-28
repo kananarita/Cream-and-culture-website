@@ -1,4 +1,4 @@
-package com.yoghurtshop.backend.dto.request;
+package com.backend.dto.request;
 
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.Min;

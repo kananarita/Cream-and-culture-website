@@ -1,6 +1,6 @@
-package com.yoghurtshop.backend.repository;
+package com.backend.repository;
 
-import com.yoghurtshop.backend.entity.Cart;
+import com.backend.entity.Cart;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

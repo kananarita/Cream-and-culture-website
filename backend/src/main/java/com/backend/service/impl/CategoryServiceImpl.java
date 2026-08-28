@@ -1,12 +1,12 @@
-package com.yoghurtshop.backend.service.impl;
+package com.backend.service.impl;
 
-import com.yoghurtshop.backend.dto.request.CategoryRequest;
-import com.yoghurtshop.backend.dto.response.CategoryResponse;
-import com.yoghurtshop.backend.entity.Category;
-import com.yoghurtshop.backend.exception.DuplicateResourceException;
-import com.yoghurtshop.backend.exception.ResourceNotFoundException;
-import com.yoghurtshop.backend.repository.CategoryRepository;
-import com.yoghurtshop.backend.service.CategoryService;
+import com.backend.dto.request.CategoryRequest;
+import com.backend.dto.response.CategoryResponse;
+import com.backend.entity.Category;
+import com.backend.exception.DuplicateResourceException;
+import com.backend.exception.ResourceNotFoundException;
+import com.backend.repository.CategoryRepository;
+import com.backend.service.CategoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
