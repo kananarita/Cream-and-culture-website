@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --font-fraunces: "Fraunces", ui-serif, Georgia, serif;
+  --font-work-sans: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-space-mono: "Space Mono", ui-monospace, "SF Mono", monospace;
+  --background: #FFFFFF;
+  --foreground: #1F1F1F;
+  --pink: #E7A9C4;
+  --pink-light: #FBE7EF;
+  --pink-dark: #C97A9D;
+  --pink-deep: #A6294B;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+::selection {
+  background-color: var(--pink);
+  color: var(--foreground);
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--pink-deep);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.dollop-mask {
+  border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.drizzle-divider path {
+  stroke-dashoffset: 0;
+}
