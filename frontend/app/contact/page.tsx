@@ -75,7 +75,7 @@ export default function ContactPage() {
           <p className="mt-2 font-body text-sm text-charcoal/80">
             hello@creamandcultureyoghurt.co.ke
             <br />
-            +254 700 000 000
+            +254 745939376
           </p>
         </div>
       </div>
