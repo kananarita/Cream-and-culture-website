@@ -74,7 +74,7 @@ export const products: Product[] = [
       { size: "5L", price: 1000 },
     ],
     culture: "2-day set",
-    image: "/images/blueberryyoghurt.png",
+    image: "/images/mixedflavor.jpeg",
     description:
       "Velvety yoghurt layered with juicy blueberry goodness for a delicious blend of creamy, fruity and slightly tangy.",
     tags: ["Live cultures", "Layered"],

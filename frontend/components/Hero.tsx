@@ -29,7 +29,7 @@ export default function Hero() {
             Culturally rooted choice.
           </span>
 
-          <h1 className="mt-6 font-display text-5xl font-semibold leading-[1.05] tracking-tight text-plum md:text-6xl">
+          <h1 className="mt-6 font-display text-3xl font-semibold leading-[1.1] tracking-tight text-plum sm:text-4xl md:text-6xl md:leading-[1.05]">
             Scoop, Swirl and
             <br />
             Savor the Creamy goodness of
@@ -37,7 +37,7 @@ export default function Hero() {
             Yoghurt.
           </h1>
 
-          <p className="mt-6 max-w-sm font-body text-lg italic text-charcoal/70">
+          <p className="mt-6 max-w-sm font-body text-base italic text-charcoal/70 md:text-lg">
             Happiness in every scoop.
           </p>
 
@@ -69,24 +69,24 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto h-[450px] w-full md:h-[600px] md:mx-0">
-          <div className="absolute -left-6 -top-6 h-full w-full rounded-[3rem] bg-honey/40 md:-left-8 md:-top-8" aria-hidden />
+        <div className="relative mx-auto h-[320px] w-full sm:h-[400px] md:h-[600px] md:mx-0">
+          <div className="absolute -left-4 -top-4 h-full w-full rounded-[3rem] bg-honey/40 md:-left-8 md:-top-8" aria-hidden />
           <HeroSlideshow slides={heroSlides} />
 
-          <div className="absolute -left-4 top-8 animate-float rounded-2xl border border-plum/10 bg-white/90 px-4 py-3 shadow-lg backdrop-blur">
-            <p className="font-mono text-[10px] uppercase tracking-wide text-charcoal/50">
+          <div className="absolute -left-2 top-6 animate-float rounded-xl border border-plum/10 bg-white/90 px-3 py-2 shadow-lg backdrop-blur sm:-left-4 sm:top-8 sm:rounded-2xl sm:px-4 sm:py-3">
+            <p className="font-mono text-[9px] uppercase tracking-wide text-charcoal/50 sm:text-[10px]">
               Set time
             </p>
-            <p className="font-display text-lg font-semibold text-plum">
+            <p className="font-display text-sm font-semibold text-plum sm:text-lg">
               3 days
             </p>
           </div>
 
-          <div className="absolute -bottom-3 -right-2 animate-float rounded-2xl border border-plum/10 bg-white/90 px-4 py-3 shadow-lg backdrop-blur [animation-delay:1.2s]">
-            <p className="font-mono text-[10px] uppercase tracking-wide text-charcoal/50">
+          <div className="absolute -bottom-2 right-0 animate-float rounded-xl border border-plum/10 bg-white/90 px-3 py-2 shadow-lg backdrop-blur [animation-delay:1.2s] sm:-bottom-3 sm:-right-2 sm:rounded-2xl sm:px-4 sm:py-3">
+            <p className="font-mono text-[9px] uppercase tracking-wide text-charcoal/50 sm:text-[10px]">
               Live cultures
             </p>
-            <p className="font-display text-lg font-semibold text-berry">
+            <p className="font-display text-sm font-semibold text-berry sm:text-lg">
               4 strains
             </p>
           </div>
