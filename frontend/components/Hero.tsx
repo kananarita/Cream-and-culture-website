@@ -3,17 +3,21 @@ import HeroSlideshow from "@/components/HeroSlideshow";
 
 const heroSlides = [
   {
-    src: "/images/strawberryyoghurt.jpeg",
+    src: "/images/strawberryyoghurt1.jpeg",
     alt: "Cream and Culture Strawberry Yoghurt — sweet, creamy, and bursting with strawberry goodness",
   },
   {
-    src: "/images/lemonyoghurt.png",
+    src: "/images/lemonyoghurt.jpeg",
     alt: "Cream and Culture Plain Yoghurt — naturally creamy, smooth, and deliciously simple",
   },
   {
-    src: "/images/vanillayoghurt.png",
+    src: "/images/vanillayogurt.jpeg",
     alt: "Cream and Culture Vanilla Yoghurt — silky smooth, delicately sweet, and full of vanilla goodness",
   },
+  {
+    src: "/images/blackcurrentyoghurt.jpeg",
+    alt: "Cream and Culture Blackcurrent Flavor Yoghurt — a delightful combination of natural flavors",
+  }
 ];
 
 export default function Hero() {
@@ -22,7 +26,7 @@ export default function Hero() {
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 pb-20 pt-14 md:grid-cols-2 md:gap-12 md:pb-28 md:pt-20">
         <div>
           <span className="inline-flex items-center gap-2 rounded-full bg-sage-light px-4 py-1.5 font-mono text-xs text-sage">
-            Cultured fresh, every morning
+            Culturally rooted choice.
           </span>
 
           <h1 className="mt-6 font-display text-5xl font-semibold leading-[1.05] tracking-tight text-plum md:text-6xl">
@@ -65,7 +69,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto aspect-square w-full md:mx-0">
+        <div className="relative mx-auto h-[450px] w-full md:h-[600px] md:mx-0">
           <div className="absolute -left-6 -top-6 h-full w-full rounded-[3rem] bg-honey/40 md:-left-8 md:-top-8" aria-hidden />
           <HeroSlideshow slides={heroSlides} />
 

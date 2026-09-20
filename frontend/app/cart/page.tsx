@@ -33,8 +33,8 @@ export default function CartPage() {
       </h1>
 
       <div className="mt-10 divide-y divide-plum/10 border-y border-plum/10">
-        {lines.map(({ product, qty }) => (
-          <div key={product.slug} className="flex items-center gap-4 py-5">
+        {lines.map(({ product, size, qty }) => (
+          <div key={`${product.slug}-${size.size}`} className="flex items-center gap-4 py-5">
             <div className="dollop-mask relative h-16 w-16 shrink-0 overflow-hidden bg-sage-light">
               <Image
                 src={product.image}
@@ -49,12 +49,12 @@ export default function CartPage() {
                 {product.name}
               </p>
               <p className="font-mono text-xs text-charcoal/50">
-                {product.size} · KSh {product.price}
+                {size.size} · KSh {size.price}
               </p>
             </div>
             <div className="flex items-center gap-2">
               <button
-                onClick={() => setQty(product.slug, qty - 1)}
+                onClick={() => setQty(product.slug, size.size, qty - 1)}
                 aria-label={`Decrease quantity of ${product.name}`}
                 className="grid h-8 w-8 place-items-center rounded-full border border-plum/20 text-plum hover:border-berry hover:text-berry"
               >
@@ -62,7 +62,7 @@ export default function CartPage() {
               </button>
               <span className="w-6 text-center font-mono text-sm">{qty}</span>
               <button
-                onClick={() => setQty(product.slug, qty + 1)}
+                onClick={() => setQty(product.slug, size.size, qty + 1)}
                 aria-label={`Increase quantity of ${product.name}`}
                 className="grid h-8 w-8 place-items-center rounded-full border border-plum/20 text-plum hover:border-berry hover:text-berry"
               >
@@ -70,10 +70,10 @@ export default function CartPage() {
               </button>
             </div>
             <p className="w-20 text-right font-mono text-sm text-plum">
-              KSh {product.price * qty}
+              KSh {size.price * qty}
             </p>
             <button
-              onClick={() => removeLine(product.slug)}
+              onClick={() => removeLine(product.slug, size.size)}
               aria-label={`Remove ${product.name} from cart`}
               className="text-charcoal/40 hover:text-berry"
             >

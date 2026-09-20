@@ -30,8 +30,8 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-8 md:grid-cols-3">
           {usps.map((item) => (
-            <div key={item.title} className="rounded-3xl border border-black/10 bg-white p-6">
-              <h3 className="font-display text-xl font-semibold text-black">
+            <div key={item.title} className="rounded-3xl bg-white p-6 shadow-sm">
+              <h3 className="font-display text-lg font-semibold text-black">
                 {item.title}
               </h3>
               <p className="mt-2 font-body text-sm leading-relaxed text-black/75">
@@ -41,13 +41,14 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section className="mx-auto max-w-6xl px-6 pb-20">
-        <div className="mb-8 flex items-end justify-between">
+      
+            <section className="mx-auto max-w-6xl px-6 pb-20">
+        <div className="mb-10 flex items-end justify-between">
           <div>
             <span className="font-mono text-xs uppercase tracking-wider text-black">
               This week's set
             </span>
-            <h2 className="mt-2 font-display text-3xl font-semibold text-black">
+            <h2 className="mt-2 font-display text-4xl font-semibold text-black md:text-5xl">
               Featured flavours
             </h2>
           </div>
@@ -55,29 +56,29 @@ export default function Home() {
             href="/menu"
             className="hidden font-body text-sm font-semibold text-black hover:text-pink-dark md:block"
           >
-            See full menu →
+            Explore full menu →
           </Link>
         </div>
-        <div className="grid grid-cols-2 gap-5 md:grid-cols-4">
-          {featured.map((product) => (
-            <ProductCard key={product.slug} product={product} />
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
+          {products.slice(0, 3).map((product) => (
+            <ProductCard key={product.slug} product={product} size="large" />
           ))}
         </div>
         <Link
           href="/menu"
           className="mt-8 block text-center font-body text-sm font-semibold text-black hover:text-pink-dark md:hidden"
         >
-          See full menu →
+           Explore full menu →
         </Link>
       </section>
 
 <DrizzleDivider className="text-black" />
 
-      <section className="bg-white text-black">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 py-20 md:grid-cols-2">
-          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl">
+         <section className="bg-white text-black">
+        <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 md:grid-cols-2">
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-[480px] overflow-hidden rounded-3xl">
            <Image
-           src="/images/strawberryyoghurt.jpeg"
+           src="/images/strawberryyoghurt1.jpeg"
             alt="A collection of yoghurt bottles"
             fill
             sizes="(min-width: 768px) 480px, 90vw"
@@ -89,10 +90,10 @@ export default function Home() {
             <span className="font-mono text-xs uppercase tracking-wider text-black">
               Why slow
             </span>
-            <h2 className="mt-3 font-display text-3xl font-semibold leading-tight md:text-4xl">
+            <h2 className="mt-3 font-display text-4xl font-semibold leading-tight md:text-5xl">
               Most yoghurt is rushed. Ours isn't.
             </h2>
-            <p className="mt-4 max-w-md font-body text-sm leading-relaxed text-black/75">
+            <p className="mt-5 max-w-md font-body text-base leading-relaxed text-black/75">
               Commercial batches set in hours under heat lamps. We let ours
               culture for two to three days at a gentler temperature, which
               is slower, less efficient, and the only way we've found to get
@@ -100,7 +101,7 @@ export default function Home() {
             </p>
             <Link
               href="/about"
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-pink px-5 py-2.5 font-body text-sm font-semibold text-black hover:bg-pink-dark hover:text-white"
+              className="mt-8 inline-flex items-center gap-2 rounded-full bg-pink px-6 py-3 font-body text-base font-semibold text-black hover:bg-pink-dark hover:text-white"
             >
               Read our story →
             </Link>
@@ -109,7 +110,7 @@ export default function Home() {
       </section>
 
       <section className="overflow-hidden border-t border-black py-8">
-        <div className="flex animate-marquee gap-16 whitespace-nowrap font-display text-2xl text-black">
+        <div className="flex animate-marquee gap-16 whitespace-nowrap font-display text-xl text-black">
           {Array.from({ length: 2 }).map((_, i) => (
             <div key={i} className="flex items-center gap-16">
               <span>Set daily</span>
